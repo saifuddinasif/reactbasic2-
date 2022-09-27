@@ -45,7 +45,7 @@
       "favoriteFruit": "strawberry"
     },
     {
-      "_id": "632e751b423894e83b58bc03",
+      "id": "632e751b423894e83b58bc03",
       "index": 1,
       "guid": "2993be18-51fa-447b-a9e4-d86093d8d72c",
       "isActive": false,
@@ -90,7 +90,7 @@
       "favoriteFruit": "apple"
     },
     {
-      "_id": "632e751bf2702f7ecccfaf23",
+      "id": "632e751bf2702f7ecccfaf23",
       "index": 2,
       "guid": "9cc0c80f-91e8-4d2e-85da-140c138e4a06",
       "isActive": true,
@@ -135,7 +135,7 @@
       "favoriteFruit": "apple"
     },
     {
-      "_id": "632e751baa48d37dc978ef46",
+      "id": "632e751baa48d37dc978ef46",
       "index": 3,
       "guid": "2ec5d63a-c2ac-4c63-81e3-3c8e02c003ea",
       "isActive": false,
@@ -180,7 +180,7 @@
       "favoriteFruit": "apple"
     },
     {
-      "_id": "632e751bf6fb64f804a461fd",
+      "id": "632e751bf6fb64f804a461fd",
       "index": 4,
       "guid": "2cddaf2a-8be6-44a7-b948-503aa1e4df88",
       "isActive": true,

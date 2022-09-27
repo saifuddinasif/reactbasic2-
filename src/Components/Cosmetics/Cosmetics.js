@@ -1,7 +1,8 @@
+/* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from 'react';
 import Cosmeti from '../Cosmeti/Cosmeti';
 import { add, multiply } from '../utilities/Calculate';
-
+import './Cosmetics.css'
 const Cosmetics = () => {
 
     const first = 44;
@@ -33,18 +34,26 @@ useEffect (() => {
 
 //  ]
     return (
-        <div>
+
+<>
+           <div className='products'>
             <h1>Total: {total}</h1>
             <h1>MUltiply: {multiplyi}</h1>
             <h1>Cosmetics </h1>
-            {
-                cosmetics.map(cosmetic => <Cosmeti
-                    key= {cosmetic.id}
-                    cosmetic={cosmetic}></Cosmeti>)
-
-                
-            }
+          
         </div>
+
+        <div className='cosmetics'>
+        {
+              cosmetics.map(cosmetic => <Cosmeti
+                  key= {cosmetic.id}
+                  cosmetic={cosmetic}></Cosmeti>)
+
+              
+          }
+        </div>
+
+        </>
     );
 };
 
