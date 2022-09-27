@@ -1,7 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import Cosmeti from '../Cosmeti/Cosmeti';
+import { add, multiply } from '../utilities/Calculate';
 
 const Cosmetics = () => {
+
+    const first = 44;
+    const second =4;
+    const total = add(first,second)
+    const multiplyi= multiply(first,second)
+
 
 const [cosmetics, setCosmetics] = useState([]);
 
@@ -27,6 +34,8 @@ useEffect (() => {
 //  ]
     return (
         <div>
+            <h1>Total: {total}</h1>
+            <h1>MUltiply: {multiplyi}</h1>
             <h1>Cosmetics </h1>
             {
                 cosmetics.map(cosmetic => <Cosmeti
