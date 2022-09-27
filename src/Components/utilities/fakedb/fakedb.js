@@ -4,7 +4,7 @@
 const addToDb = id => {
 
 let shoppingCart ={}
-
+/* get the shopping cart from local storage  */
 const storedCart = localStorage.getItem('shopping-cart');
 
 if(storedCart){
@@ -39,4 +39,21 @@ localStorage.setItem('shopping-cart',JSON.stringify(shoppingCart));
 
 } 
 
-export {addToDb}
+
+const removeFromDb = id => {
+
+const storedCart =localStorage.getItem('shopping-cart');
+
+if(storedCart){
+    /* shopping cart is string can not use string so haveto parse it  */
+    const shoppingCart = JSON.parse(storedCart);
+
+    if(id in shoppingCart){
+
+    }
+}
+
+}
+
+
+export {addToDb, removeFromDb}
