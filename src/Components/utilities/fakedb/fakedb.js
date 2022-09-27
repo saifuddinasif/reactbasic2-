@@ -42,14 +42,19 @@ localStorage.setItem('shopping-cart',JSON.stringify(shoppingCart));
 
 const removeFromDb = id => {
 
+    
 const storedCart =localStorage.getItem('shopping-cart');
 
 if(storedCart){
     /* shopping cart is string can not use string so haveto parse it  */
+   
     const shoppingCart = JSON.parse(storedCart);
 
     if(id in shoppingCart){
 
+        console.log("first")
+        delete shoppingCart[id];
+        localStorage.setItem('shopping-cart',JSON.stringify(shoppingCart));
     }
 }
 

@@ -14,7 +14,7 @@ const Cosmeti = (props) => {
 
      const removeFromCart = id => {
          
-      removeFromDb()
+      removeFromDb(id)
 
      }
 
